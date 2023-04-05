@@ -6,9 +6,12 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tsc": "tsc --watch --preserveWatchOutput",
+    "server": "node server/server.cjs"
   },
   "dependencies": {
+    "body-parser": "^1.20.2",
     "bootstrap": "^5.2.3",
     "express": "^4.18.2",
     "node": "^19.8.1",
@@ -24,7 +27,7 @@
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "@vitejs/plugin-react": "^3.1.0",
-    "typescript": "^4.9.3",
+    "typescript": "^4.9.5",
     "vite": "^4.2.0"
   }
 }
