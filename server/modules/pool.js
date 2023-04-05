@@ -1,3 +1,5 @@
+//Connection to the DB
+
 const pg = require('pg');
 let pool;
 
