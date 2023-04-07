@@ -6,6 +6,9 @@ const app = express();
 
 // Serve static files
 app.use(express.static('build'));
+//Body Parser Middleware
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 // App Set //
 const PORT = process.env.PORT || 5000;
