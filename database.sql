@@ -22,8 +22,6 @@ CREATE TABLE sub_tasks (
   "completed" boolean DEFAULT false
 );
 
-
-
 CREATE TABLE work_times ( 
   "id" serial PRIMARY KEY,
   "date" DATE, 
