@@ -6,14 +6,11 @@ export function Tasks() {
 
   function loadTasks() {
     axios({ method: 'get', url: '/api/task' }).then((response) => {
-      console.log(response);
       setTestCase(response.data[0].name);
-      console.log('DECIDE:', testCase);
     });
   }
 
   useEffect(() => {
-    console.log('inUseEffect', testCase);
     loadTasks();
   }, []);
 

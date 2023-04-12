@@ -1,3 +1,3 @@
 export function NavigationBar() {
-  return <p>Testing Nav Bar</p>;
+  return <p>Frontend Connected to Server!</p>;
 }
